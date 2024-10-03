@@ -1,0 +1,121 @@
+//====================================================================================================
+.firstSlide {
+  background-color: $mainBg;
+  padding: 10px 0px 80px 80px;
+  
+  &__container {
+    
+    height: 660px;
+    padding: 60px 0;
+    //margin-left: 120px;
+    
+    display: grid;
+    
+    //grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+    "title buttonImage"
+    "subtexts  buttonImage";
+    grid-template-columns: minmax(720px,720px) minmax(720px,720px);
+    //justify-content: end;
+  }
+
+  &__title {
+    //padding: 160px 0px 0px 120px;
+    font-size: 55px;
+    line-height: 120%;
+    color:$titleColor;
+    grid-area: title;
+  }
+
+  &__subtext {
+    font-size: 18px;
+    line-height: 140%;
+    color:$mainColor;
+    order: 1;
+  }
+  &__subtextPointer{
+    grid-area: subtexts;
+    display:grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+  }
+  &__image {
+
+  }
+
+  &__button {
+    position:relative;
+    right:15%;
+  }
+}
+.image {
+  //margin-left:100px ;
+  grid-area: buttonImage;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  right: 70px;
+  z-index: 0;
+  width:800px;
+  //padding-left:100px ;
+  align-items: flex-end;
+  //margin-left:150px;
+  
+  &__textPointer {
+    grid-column: 2;
+    grid-row:2;
+    display:flex;
+    //gap:-20px;
+    position:relative;
+  }
+  &__text{
+    padding-left: 10%;
+  }
+  &__img {
+    display: flex;
+    align-items: end;
+    
+  }
+  &__pointer{
+    position: relative;
+    z-index: 1;
+    bottom: 40px;
+    right: 10px;
+  }
+}
+.button {
+  &__firstSlide{
+    position: relative;
+  }
+  &__firstSlide button{
+    position: absolute;
+  }
+  &__one{
+    position: relative;
+    z-index: 2;
+    color:white;
+  }
+}
+.image1{
+  object-fit: cover;
+  width: 280px;
+  height: 327px;
+}
+.image2{
+  object-fit: cover;
+  width: 306px;
+  height: 530px;
+}
+.button{
+  width: 200px;
+  height: 200px;
+  border-radius: 900px;
+  background-color: $ButtonAndMenu;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+//====================================================================================================

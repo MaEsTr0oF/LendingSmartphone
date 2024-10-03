@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="firstSlide">
+					<div class="firstSlide__container">
+						<div class="firstSlide__title">Смартфоны для каждого: стиль, цвет 
+							и цена на любой вкус!</div>
+							<div class="firstSlide__subtextPointer">
+								<div class="firstSlide__subtext">Более 1500 моделей смартфонов для любых задач и предпочтений!</div>
+								<div class="image__textPointer">
+							  	<div class="image__text">Городские смартфоны: стильные решения для активной жизни</div>
+							  	<div class="image__pointer"><img src="@img/pointer.svg" alt="Image"></div>
+								</div>
+						  </div>
+						<div class="image">
+							<div class="image__img">
+								<img class="image1" src="@img/phoneFirst.svg" alt="Image">
+								<img class="image2" src="@img/phoneSecond.svg" alt="Image">
+							</div>
+						<div class="firstSlide__button button">
+							<button class="button__firstSlide"><span class="button__one">Откройте каталог</span></button>
+						</div>
+					</div>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

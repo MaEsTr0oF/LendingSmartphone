@@ -1,0 +1,8 @@
+dist
+node_modules
+.vscode
+package-lock.json
+snnipets.txt
+tailwind.config.js
+postcss.config.js
+package.json
